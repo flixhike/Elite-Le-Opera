@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Menu</title>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HERO VIDEO -->
+<section class="hero">
+  <video autoplay muted loop playsinline>
+    <source src="assets/banner.mp4" type="video/mp4">
+  </video>
+</section>
+
+<!-- INFO CARDS -->
+<section class="info-cards">
+  <div class="card">
+    <i class="fa-solid fa-location-dot"></i>
+    <p>SP Square, Between Malabar Gold & Joyalukkas,<br>Park Road, Kurnool-518001, A.P</p>
+  </div>
+
+  <div class="card">
+    <i class="fa-solid fa-clock"></i>
+    <p>Open Daily 11 AM – 11 PM</p>
+  </div>
+
+  <div class="card">
+    <i class="fa-solid fa-phone"></i>
+    <p><a href="tel:+917288926789">+91 7288926789</a></p>
+  </div>
+</section>
+
+<!-- MENU -->
+<section class="menu">
+  <h1 class="menu-title">Our Menu</h1>
+  <div class="divider">Tap Images to Zoom</div>
+
+  <div class="menu-vertical">
+    <!-- same images as before -->
+    <img src="assets/menu1.jpg" onclick="zoom(this)">
+    <img src="assets/menu2.jpg" onclick="zoom(this)">
+    <img src="assets/menu3.jpg" onclick="zoom(this)">
+    <img src="assets/menu4.jpg" onclick="zoom(this)">
+    <img src="assets/menu5.jpg" onclick="zoom(this)">
+    <img src="assets/menu6.jpg" onclick="zoom(this)">
+    <img src="assets/menu7.jpg" onclick="zoom(this)">
+    <img src="assets/menu8.jpg" onclick="zoom(this)">
+    <img src="assets/menu9.jpg" onclick="zoom(this)">
+    <img src="assets/menu10.jpg" onclick="zoom(this)">
+    <img src="assets/menu11.jpg" onclick="zoom(this)">
+    <img src="assets/menu12.jpg" onclick="zoom(this)">
+  </div>
+</section>
+
+
+<!-- FLOATING CALL BUTTON -->
+<a href="tel:+917288926789" class="call-btn">
+  <i class="fa-solid fa-phone"></i>
+</a>
+
+<!-- ORDER NOW -->
+<div class="order-wrapper">
+  <button class="order-btn" onclick="toggleOrder()">Order Now</button>
+
+  <div class="order-mini" id="orderMini">
+    <a href="https://www.swiggy.com/menu/485301?source=sharing" target="_blank">
+      <img src="assets/swiggy.png">
+    </a>
+    <a href="https://zomato.com/dummy-link" target="_blank">
+      <img src="assets/zomato.png">
+    </a>
+  </div>
+</div>
+
+<!-- IMAGE ZOOM MODAL -->
+<div class="modal" id="modal" onclick="closeModal()">
+  <img id="modalImg">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
